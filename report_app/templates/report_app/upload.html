@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Загрузка файла</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Загрузите Excel файл</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="file">Загрузить Excel файл:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Сохранить данные</button>
+    </form>
+</body>
+</html>
