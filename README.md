@@ -12,4 +12,4 @@
 ```docker compose exec web python manage.py makemigrations```
 ```docker-compose exec web python manage.py migrate```
 
-Затем в браузере открыть ссылку [http://127.0.0.1:8000/report/upload/](url)
+Затем в браузере открыть ссылку [http://127.0.0.1:8000/report/upload/](http://127.0.0.1:8000/report/upload/)
